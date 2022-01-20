@@ -10,8 +10,14 @@ img{
 }
 
 .container{
-    max-width: 100%;
-    margin: 3em;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.inside{
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
 .main-top::after{
@@ -20,64 +26,63 @@ img{
     clear: both;
 }
 
-.left{
-    width: 33%;
+.item{
+    width: calc(100% / 3 - 1em);
     float: left;
     object-fit: contain;
-    margin-right: .5em;
+    margin: 0.5em;
 }
 
-.right{
-    width: 33%;
-    float: left;
-    object-fit: contain;
-    margin-left: .5em;
-}
-
-.center{
-    width: calc(34% - 1em);
-    float: left;
-    object-fit: contain;
-}
-
-.main-bottom::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.left-bot{
-    width: 33%;
-    float: left;
-    object-fit: contain;
-    margin-right: .5em;
-}
-
-.right-bot{
-    width: 33%;
-    float: left;
-    object-fit: contain;
-    margin-left: .5em;
-}
-
-.center-bot{
-    width: calc(34% - 1em);
-    float: left;
-    object-fit: contain;
-}
 
 .discount{
     background-color: red;
     color: white;
     padding: 5px;
-    relative
+    position: relative;
 }
 
 .green{
     background-color: green;
     color: white;
     padding: 5px;
+    position: relative;
 }
+
+.bottom-discount{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.heart{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.description{
+    text-transform: uppercase;
+}
+
+.description{
+    font-size: 16px;
+}
+
+.red-price{
+    color: red;
+    font-size: 13px;
+}
+
+.price{
+    text-decoration-line: line-through;
+    font-size: 13px;
+}
+
 
 
 
