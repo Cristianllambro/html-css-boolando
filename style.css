@@ -9,6 +9,39 @@ img{
     display: block;
 }
 
+nav{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+img.logo{
+    width: 150px;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    padding: 1.5em;
+    display: inline-block;
+}
+
+nav::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+a:hover {
+    background-color: lightgray;
+}
+
 .container{
     max-width: 90%;
     margin: 0 auto;
@@ -17,11 +50,12 @@ img{
 .inside{
     width: 100%;
     height: auto;
+    padding-bottom: .7em;
     position: relative;
     font-family: 'Roboto', sans-serif;;
 }
 
-.main-top::after{
+.container::after{
     content: "";
     display: table;
     clear: both;
@@ -31,9 +65,13 @@ img{
     width: calc(100% / 3 - 1em);
     float: left;
     object-fit: contain;
-    margin: 0.5em;
+    margin-top: 1.5em;
 }
 
+.item:nth-child(3n + 2){
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
 
 .discount{
     background-color: red;
@@ -52,7 +90,7 @@ img{
 .bottom-discount{
     position: absolute;
     left: 0;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 .heart{
