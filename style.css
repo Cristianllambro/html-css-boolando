@@ -4,30 +4,73 @@
     box-sizing: border-box;
 }
 
-body{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 img{
-    width: 300px;
+    width: 100%;
     display: block;
 }
 
-.main-top{
-    padding-top: 3em;
-    width: 100%;
+.container{
+    max-width: 100%;
+    margin: 3em;
 }
 
-.left, .center, .right{
+.main-top::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left{
+    width: 33%;
     float: left;
+    object-fit: contain;
+    margin-right: .5em;
+}
+
+.right{
+    width: 33%;
+    float: left;
+    object-fit: contain;
+    margin-left: .5em;
 }
 
 .center{
-    padding-left: 1em;
-    padding-right: 1em;
+    width: calc(34% - 1em);
+    float: left;
+    object-fit: contain;
 }
+
+.main-bottom::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-bot{
+    width: 33%;
+    float: left;
+    object-fit: contain;
+    margin-right: .5em;
+}
+
+.right-bot{
+    width: 33%;
+    float: left;
+    object-fit: contain;
+    margin-left: .5em;
+}
+
+.center-bot{
+    width: calc(34% - 1em);
+    float: left;
+    object-fit: contain;
+}
+
+
+
+
+
+
 
 
 
