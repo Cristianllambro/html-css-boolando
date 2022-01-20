@@ -83,6 +83,22 @@ img{
     font-size: 13px;
 }
 
+.default{
+    display: block;
+}
+
+.change{
+    display: none;
+}
+
+.item:hover .change{
+    display: block;
+}
+
+.item:hover .default{
+    display: none;
+}
+
 
 
 
