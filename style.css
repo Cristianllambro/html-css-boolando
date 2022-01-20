@@ -52,7 +52,7 @@ a:hover {
     height: auto;
     padding-bottom: .7em;
     position: relative;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container::after{
