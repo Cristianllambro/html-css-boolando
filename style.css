@@ -87,12 +87,6 @@ a:hover {
     position: relative;
 }
 
-.bottom-discount{
-    position: absolute;
-    left: 0;
-    bottom: 40px;
-}
-
 .heart{
     background-color: white;
     height: 40px;
@@ -104,11 +98,14 @@ a:hover {
     top: 40px;
 }
 
-.description{
-    text-transform: uppercase;
+.bottom-discount{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
 }
 
 .description{
+    text-transform: uppercase;
     font-size: 16px;
 }
 
