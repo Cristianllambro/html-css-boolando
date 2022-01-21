@@ -47,6 +47,18 @@ a:hover {
     margin: 0 auto;
 }
 
+.item:nth-child(3n + 2){
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.item{
+    width: calc(100% / 3 - 1em);
+    float: left;
+    object-fit: contain;
+    margin-top: 1.5em;
+}
+
 .inside{
     width: 100%;
     height: auto;
@@ -59,18 +71,6 @@ a:hover {
     content: "";
     display: table;
     clear: both;
-}
-
-.item{
-    width: calc(100% / 3 - 1em);
-    float: left;
-    object-fit: contain;
-    margin-top: 1.5em;
-}
-
-.item:nth-child(3n + 2){
-    margin-left: 1.5em;
-    margin-right: 1.5em;
 }
 
 .discount{
