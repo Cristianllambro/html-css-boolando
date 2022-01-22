@@ -57,6 +57,7 @@ a:hover {
     float: left;
     object-fit: contain;
     margin-top: 1.5em;
+    cursor: pointer;
 }
 
 .inside{
